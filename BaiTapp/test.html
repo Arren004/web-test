@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICONLINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div id= "header">
+        <ul>
+             <li><b style="text-align: center;">QUẢN LÍ CỬA HÀNG</b></li>
+             <img src="image/IC_logo_small.png" id="logo">
+             <button id="shop">
+           <a href="" onclick="showError1()"> <img src="image/image.png" id="shop"></button></a>
+            </button>
+            
+        </ul>
+    </div>
+    <div id= "banner">
+        <div class="tag">
+            <a href="https://utexlms.hcmute.edu.vn/my/courses.php" target="_blank" ><button onclick="function_q1()"><b>TRANG CHỦ</b></button></a>
+            <a href="https://www.thegioiic.com/" target="_blank"><button onclick="function_q2()"><b>SẢN PHẨM</b></button></a>
+            <a href="https://shopee.vn/" target="_blank"><button onclick="function_q3()"><b>GIỚI THIỆU</b></button></a>
+            <a href="https://www.facebook.com/profile.php?id=100047118720258" target="_blank"><button onclick="function_q4()"><b>LIÊN HỆ</b></button></a>
+        </div>
+    </div>
+    <div id="top">
+        <div id="time"></div>
+    </div>
+    
+    <script>
+    function dongho() {
+        var time = new Date();
+        var gio = time.getHours();
+        var phut = time.getMinutes();
+        var giay = time.getSeconds();
+        var ngay = time.getDate();
+        var thang = time.getMonth() + 1; // Tháng trong JavaScript bắt đầu từ 0
+        var nam = time.getFullYear();
+    
+        // Định dạng số có 2 chữ số
+        if (gio < 10) gio = "0" + gio;
+        if (phut < 10) phut = "0" + phut;
+        if (giay < 10) giay = "0" + giay;
+        if (ngay < 10) ngay = "0" + ngay;
+        if (thang < 10) thang = "0" + thang;
+    
+        var thoigian = gio + ":" + phut + ":" + giay;
+        var ngaythangnam = ngay + "/" + thang + "/" + nam;
+    
+        document.getElementById("time").innerHTML = ngaythangnam + " - " + thoigian;
+        
+        setTimeout(dongho, 1000); // Gọi lại hàm sau 1 giây
+    }
+    
+    dongho();
+    </script>
+    <div>
+        <img src="image/result_aaaaaa.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="title"> SỐ SẢN PHẨM MỚI VỪA NHẬP</div>
+        <div class="products">
+            <div class="product">
+               <img src="image/pin.jpg" alt="Pin AAA">
+                <h3>Pin tiểu AAA con Ó Pinaco</h3>
+                <p class="price">999.999đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/tro.jpg" alt="Điện trở">
+                <h3>Điện trở R025 2512 2W 1%</h3>
+                <p class="price">350.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/3.jpg" alt="Đế mở rộng esp32">
+                <h3>Đế mở rộng esp32 30 chân</h3>
+                <p class="price">390.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/4.jpg" alt="Thiếc hàn SANKI">
+                <h3>Thiếc hàn SANKI JAPAN 1.0mm</h3>
+                <p class="price">7800.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/trans.jpg" alt="Thiếc hàn SANKI">
+                <h3>Transistor D880 2SD880-Y NPN 3A 60V TO-220</h3>
+                <p class="price">7800.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="image/khoan.jpg" alt="Pin AAA">
+                <h3>Mũi khoan 4MM</h3>
+                <p class="price">999.999đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/de.jpg" alt="Điện trở">
+                <h3>Đế relay G6B-1114P</h3>
+                <p class="price">350.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/3.jpg" alt="Đế mở rộng esp32">
+                <h3>Đế mở rộng esp32 30 chân</h3>
+                <p class="price">390.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/aae.jpg" alt="Thiếc hàn SANKI">
+                <h3>Arduino UNO R3 DIP (kèm cáp)</h3>
+                <p class="price">7800.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="image/bãne.jpg" alt="Thiếc hàn SANKI">
+                <h3>Động cơ giảm tốc V1 + Bánh xe</h3>
+                <p class="price">7800.000đ</p>
+                <a href="#" class="buy-button" onclick="showError()">Mua ngay</a>
+            </div>
+        </div>
+     
+        
+    </div>
+</div>
+<div>
+    <h1> Điều khiển thiết bị trong cửa hàng</h1>
+</div>
+    <div class="khung">             
+            <form >
+                <!-- hien thi hinh anh -->
+                 <h1> <img id="img" src="image/door.png" width="100" height="100 "></h1>
+                  <button type="button" id="btn1" class="button1">Open</button>
+                  <button type="button" id="btn2" class="button1">Close</button><br><br>       
+              </form>
+              <form>
+                <!-- hien thi hinh anh -->
+                 <h1> <img id="den" src="image/den1 copy.png" width="100" height="100"></h1>
+                  <button type="button" id="btn3" class="button1">On</button>
+                  <button type="button" id="btn4" class="button1">Off</button><br><br>       
+              </form>
+              <form>
+                <!-- hien thi hinh anh -->
+                  <h1><img id="loa" src="image/air-conditioner.png" width="100" height="100"></h1>
+                  <button type="button" id="btn5" class="button1">On</button>
+                  <button type="button" id="btn6" class="button1">Off</button><br><br>       
+              </form>
+    </div>
+    <div>
+        <h1>Giám sát phòng thông minh</h1>
+    </div>
+    <div class="khung">
+        <!-- khung nhiet do va do am -->
+        <form>        
+            <p>Nhiệt độ</p>
+            <h1><img src="image/temp.png" width="100" height="100"></h1>
+            <h1 id="Temp" style="font-size: 20px;"></h1>
+        </form>
+        <form >
+                <p>Chất lượng tiếng ồn</p>
+                <h1><img src="image/noise.png" width="100" height="100"></h1>
+                <h1 id="CL" style="font-size: 20px;"></h1>
+        </form>
+        <form >
+            <p>Chất lượng ánh sáng</p>
+            <h1><img src="image/idea.png" width="100" height="100"></h1>
+            <h1 id="AS" style="font-size: 20px;"></h1>
+    </form>
+        </div>
+    <script src="functions.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    
+   
+    
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+<!-- lien ket voi functions.js -->
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyAfv17-Mx88IFbSR2JsTAWVthP7sqBrhCo",
+      authDomain: "tt-iot-d4f71.firebaseapp.com",
+      databaseURL: "https://tt-iot-d4f71-default-rtdb.firebaseio.com",
+      projectId: "tt-iot-d4f71",
+      storageBucket: "tt-iot-d4f71.firebasestorage.app",
+      messagingSenderId: "187063164241",
+      appId: "1:187063164241:web:e5ed7eec0ed76957a00770",
+      measurementId: "G-CVC4SF33KT"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+const database = firebase.database();
+    var nhietDo = document.getElementById('Temp');
+  var dbRef = firebase.database().ref().child('Temp');
+  var doAm = document.getElementById('CL');
+  var dbRef2 = firebase.database().ref().child('CL');
+  var as = document.getElementById('AS');
+  var dbRef3 = firebase.database().ref().child('AS');
+  dbRef.on('value', snap => Temp.innerText = snap.val());
+  dbRef2.on('value', snap => CL.innerText = snap.val());
+  dbRef3.on('value', snap => AS.innerText = snap.val());
+</script>
+
+
+</body>
+</html>

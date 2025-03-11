@@ -1,0 +1,339 @@
+body{
+    font-family: Helvetica;
+    font-size: 28px;
+    width: 100%;
+    margin: 0px auto;
+   background-image: url(image/1354012.png);
+    text-align: center;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: lightblue;
+    color: black;
+    line-height: 60px;
+
+}
+#header #logo{
+    width: 70px;
+    height: 70px;
+    float: left;
+    border: 0px;
+    margin: 0px;
+}
+#shop {
+
+    position: fixed; /* Hoặc absolute nếu cần */
+    top: 1px; /* Khoảng cách từ mép trên */
+    right: 10px; /* Khoảng cách từ mép phải */
+
+}
+
+#shop img {
+    width: 70px;
+    height: 70px;
+
+}
+
+
+#banner{
+
+    height: 50px;
+    width: 100%;
+    background-image:url("image/1354012.png");
+    
+}
+#main{
+    min-height:565px ;
+    width: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url("image/1354012.png");
+}
+#main #top{
+   min-height: 315px;
+   display: flex;
+    justify-content: center;  /* Căn giữa theo chiều ngang */
+    align-items: center;  /* Căn giữa theo chiều dọc */
+    height: 100vh;  /* Chiếm toàn bộ chiều cao màn hình */
+    background-color: #f0f0f0; /* Màu nền nhẹ */
+
+}
+#main #bot{
+    min-height: 200px;
+
+
+}
+#footer{
+    background: whitesmoke;
+    min-height: 50px;
+    width: 100%;
+
+}
+#header ul{
+    margin: 0px;
+    padding: 0px;
+}
+#header ul li{
+    list-style: none;
+    float: right;
+    width: 90%;
+    font-size: 50px;
+}
+.tag
+{
+    width:100%;
+    height:50px;
+     
+
+    
+}
+.tag button
+{
+    width: 10%  ;
+    height:50px;
+    font-size: 20px;
+
+  
+}
+#footer ul{
+    margin: 0px;
+    padding: 0px;
+}
+#footer ul li{
+    list-style: none;
+    float: left;
+    width: 65%;
+    font-size: 15px;
+
+}
+
+
+#nd{
+    width: 100px;
+    height: 120px;
+    margin-left: 10%;
+    margin-top: 1%;
+    float: left;
+}
+img#nd1 
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+}
+h2 
+{
+    font-size: x-large;
+    width: 120px;
+    height: 30px;
+    margin-left: 60%;
+    color: green;
+
+}
+
+
+
+#da{
+    width: 100px;
+    height: 120px;
+    margin-left: 20%;
+    float: left;
+    margin-top: 2%;
+}
+img#da1 
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+}
+h4 
+{
+    font-size: x-large;
+    width: 120px;
+    height: 30px;
+    margin-left: 70%;
+    color: green;
+}
+#lm{
+    width: 100px;
+    height: 120px;
+    margin-right: 17%;
+    margin-top: -0.7%;
+    float: right;
+}
+img#lm1 
+{
+    width: 120px;
+    height: 120px;
+    margin-right: 50%;
+}
+h6{
+    font-size: x-large;
+    width: 180px;
+    height: 30px;
+    margin-left: 10%;
+    color: green;
+}
+#bot h1 h2
+{
+    width:100%;
+    height:10%;
+    background-color: beige; 
+}
+.button1 {
+    width: 100px; /* Tăng kích thước để dễ nhấn */
+    height: 40px; 
+    margin-left: auto;
+    margin-right: auto; /* Căn giữa */
+    font-size: 18px; /* Giữ kích thước chữ phù hợp */
+    font-family: "Arial", sans-serif; /* Font dễ đọc hơn */
+    font-weight: bold; /* Chữ đậm hơn */
+    color: white; /* Màu chữ trắng */
+    background-color: #007bff; /* Màu xanh dương */
+    border: none;
+    border-radius: 8px; /* Bo góc mềm mại */
+    cursor: pointer; /* Biểu tượng bàn tay khi di chuột */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng mượt mà */
+}
+
+.button1:hover {
+    background-color: #0056b3; /* Màu đậm hơn khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ */
+}
+button{
+    width: 50px;
+    height: 30px;
+    margin-left: 10%;
+    font-size: 20px;
+    font-family: revert;
+    margin-right: auto;
+}
+#bot h2{
+    float: left;
+    margin-left: 18%;
+    margin-top: -13%;
+    font-size: 20px;
+    font-family: tahoma;
+    color: black;
+}
+#bot h3{
+    float: left;
+    margin-left: 48.5%;
+    margin-top: -13%;
+    font-size: 20px;
+    font-family: tahoma;
+    color: black;
+}
+#bot h4{
+    float: left;
+    margin-left: 79.5%;
+    margin-top: -13%;
+    font-size: 20px;
+    font-family: tahoma;
+    color: black;
+}
+#time{
+    font-size: 24px;
+    font-weight: bold;
+    background: #333;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Brush Script MT;
+}
+.banner1{
+
+    height: 1000px;
+    width: 100%;
+    background-image:url("image/1354012.png");
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.products {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product {
+    width: 230px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.product img {
+    width: 100%;
+    height: auto;
+}
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.price {
+    color: blue;
+    font-weight: bold;
+}
+.buy-button {
+    display: block;
+    text-decoration: none;
+    background: white;
+    border: 1px solid blue;
+    color: blue;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.buy-button:hover {
+    background: blue;
+    color: white;
+}
+
+.khung{
+
+        display: flex;
+        gap: 10px; /* Khoảng cách giữa các form */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+form {
+    width: 300px;
+  margin: 5px; /* Điều chỉnh margin để phù hợp */
+    padding: 5px;
+    text-align: center;
+}
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+canvas {
+    max-width: 80%;
+    max-height: 100%;
+}
+
